@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir este sie em varios dispositivos diferentes ou simplesmente ou simplesmente aumentar ou diminuir o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 550px)" srcset="Imagens/foto-P.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="Imagens/foto-PM.png" type="image/png">
+        <source media="(max-width: 950px)" srcset="Imagens/foto-M.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-MG.png" type="image/png">
+        <img src="Imagens/foto-G.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML.</p>
+
+    <!-- DESTA FORMA A SEGUIR O CHROME NÃO RESPONDE O AUTOPLAY, MAS O IE SIM -->
+
+    <!-- <audio src="midia/MirrorMind.mp3" autoplay></audio> -->
+
+    <audio preload="auto" autoplay controls>
+        <source src="midia/MirrorMind.mp3" type="audio/mp3">
+        <source src="midia/MirrorMind.ogg" type="audio/ogg">
+        <source src="midia/MirrorMind.wav" type="audio/wav">
+        <source src="midia/MirrorMind.wma" type="audio/wma">
+        <p>Infelizmente seu navegador não tem suporte para o nosso audio.</p>
+    </audio>
+
+</body>
+</html>
