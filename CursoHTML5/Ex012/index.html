@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Videos</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hopedado no meu servidor</p>
+    <h2>Vídeos de Caças F-16</h2>
+
+    <!-- DESTA MANEIRA VOCÊ CLICA NA IMAGEM E SERÁ ENCAMINHADO PARA OUTRA PÁGINA -->
+
+    <p>Clicando nesta imagem você será encaminhado para uma outra página com o vídeo.</p>
+    <a href="pagina-video-f16.html"><img src="imagens/f16.jpg" alt="Imagem F-16" width="450px"></a>
+    <br>
+
+    <!-- DESTA MANEIRA VOCÊ CLICA NA IMAGEM E SERÁ EXIBIDO O VIDEO NO MESMO LUGAR DA IMAGEM -->
+
+    <p>Esta outra imagem é o poster do vídeo que será exibido nesta mesma página</p>
+    <video poster="imagens/f16.jpg" width="450px" controls>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/Meu-Video-730-30.m4v" type="video/m4v">
+        <source src="midia/Meu-Video-730-30-webm.webm" type="video/webm">
+        <p>!!! Seu navegador não tem compatibilidade para exibição de vídeos !!!</p>
+    </video>
+
+    <!-- DESTA MANEIRA VOCÊ INCORPORA O VÍDEO QUE SE ESTA NO YouTube OU Vimeo CLICA NA IMAGEM E SERÁ EXIBIDO O VIDEO NO MESMO LUGAR DA IMAGEM -->
+
+    <!-- ABRA O VÍDEO DESEJADO NA RESPECTIVA PLATAFORMA, CLIQUE EM COMPARTILHAR E EM SEGUIDA EM INCORPORAR -->
+
+    <!-- APARECERÁ O CÓDIGO PARA INCORPORAÇÃO DO VÍDEO NA SUA PÁGINA. COPIE E COLE O CÓDIGO -->
+
+    <iframe width="450px" height="315" src="https://www.youtube.com/embed/gxj-9ClMaqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
