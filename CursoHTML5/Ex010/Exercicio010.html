@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links Externos</h1>
+
+    <!-- PARA CRIAÇÃO DE UM LINK EXTERNO DEPOIS DA TAG <a (ANCOR) UTILIZAR A TAG <href (HYPERTEXT REFERENCE) E ENTRE AS ASPAS COLOCAR A URL COMPLETA DO SITE DESEJADO -->
+
+    <!-- PARA A ABERTURA DE UM SITE EXTERNO EM OUTRA PÁGINA OU ABA DEPOIS DA TAG <href COLOCAR A TAG <target="_blank" -->
+
+    <p>Voce pode acessar a página da <a href="http://4rm.eb.mil.br/" target="_blank" rel="external">4ª Região Militar.</a></p>
+
+    <p>Podemos acessr tambem um canal do <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27" target="_blank" rel="external">YouTube</a>.</p>
+
+    <h2>Usando Links Internos</h2>
+
+    <!-- PARA A ABERTURA DE UM SITE IXTERNO, A PÁGINA DEVERÁ ESTAR NA MESMA PASTA. CASO ESTEJA EM PASTA DIFERENTE COLOCAR A PASTA/ NOME DO ARQUIVO -->
+
+    <p>Podemos realizar links com <a href="Noticias/Noticia001.html" rel="next">páginas internas</a> (do mesmo site)</p>
+
+    <h1>Link para DOWNLOADS de arquivos</h1>
+
+        <!-- PARA A ABERTURA DE UM ARQUIVO PARA DOWNLOAD, O MESMO DEVERÁ (A PRINCIPIO) ESTAR NA MESMA PASTA.
+            ESCOLHA UTILIZADO O ATALHO CRTL+ESPAÇO.
+            DEPOIS UTILIZAR A TAG download COLOCANDO O NOME DO ARQUIVO E A TAG type UTILIZADO O APPLICATION MAIS ADEQUADO AO TIPO DE ARQUIVO -->
+
+    <ul>
+        <li>Baixar Livro em <a href="Livros/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte." type="application/pdf">PDF</a>.</li>
+        <li>Baixar livro em <a href="Livros/10 - Ligações em toda parte.rar" download="10 - Ligações em toda parte." type="application/zip">ZIP</a>.</li>    
+    </ul>
+
+</body>
+</html>
