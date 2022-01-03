@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Fonte tipo código fonte (monoespaçadas)</h2>
+
+<!-- FONTES MONOESPAÇADAS OCUPAM O MESMO ESPAÇO LATERAL PARA TODOS OS CARCTERES -->
+<!-- VOCE PODE MARCAR O TEXTO COM A TAG CODE -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p><code>Lorem ipsum dolor sit amet consectetur adipisicing elit.</code></p>
+
+    <!-- VOCE PODE UTILIZAR A TAG PRE (PRE-FORMATADO) PARA MANTER A FORMA DE DIGITAÇÃO DE UM CÓDIGO FONTE -->
+    <pre>
+        <code>
+        from random import random
+
+        x = random()
+            while not (x > 0.3 and x < 0.6):
+            print('You are not luck! You got {}, I like the middle!'.format(x))
+        x= random()  # Ok! I call random() twice! Python doesn't have do {} while()
+            print('Now you are luck! You got {}!'.format(x))
+        </code>
+    </pre>
+
+    <h2>Citações Simples</h2>
+    <!-- VOCE PODE MARCAR AS CITAÇÕES (ASPAS) COM A TAG Q (QUOTE) -->
+
+    Minha Chefe sempre diz: <q>PAU NO CÚ DO SURDO!!!</q>
+
+    <h2>Citações Completas</h2>
+    <!-- VOCE PODE MARCAR AS CITAÇÕES COMPLETAS (TRECHOS COMPLETOS) COM A TAG BLOCKQUOTE -->
+
+    Minha psicóloga me disse que: <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&kptab=overview">Ansiedade é uma apreensão exagerada em relação ao futuro, enquanto a Angústia é um sofrimento relacionado ao presente.</blockquote>
+
+    <h2>Abreviações</h2>
+
+<!-- VOCE PODE MARCAR AS ABREVIAÇÕES COM A TAG ABBR QUE O HTML FARÁ APARECER O SIGNIFICADO DESCRITO NA TAG TITLE="" -->
+
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS3</abbr>. Estou achado muito bom!</p>
+
+    <h2>Texto Invertido</h2>
+
+    <!-- VOCE PODE FAZER UM DETERMINADO TEXTO SER ESCRITO DE FORMA INVERTIDA COM A TAG BDO
+    E DEPOIS ESCOLHER RTL (DIREITA PARA ESQUERDA) OU LTR (ESQUERDA PARA DIREITA) -->
+
+    <p>Posso escrever um <bdo dir="rtl">TEXTO INVERTIVO</bdo>.</p>
+
+
+</body>
+</html>
