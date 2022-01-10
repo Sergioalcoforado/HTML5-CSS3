@@ -12,9 +12,15 @@
             background-color: black;
             background-image: url("imagem/wallpaper002.jpg");
             background-position: center center;
-            background-size: cover;
-            background-attachment: fixed;
             background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+            /* ===== SHORTHAND DE background ===== */
+            /* ===== NÃO UTILIZAR O BACKGROUND-SIZE NO SHORTHAND ===== */
+            
+            background: black url("imagem/wallpaper002.jpg") center center no-repeat fixed;
+            background-size: cover;
         }
 
         main{
