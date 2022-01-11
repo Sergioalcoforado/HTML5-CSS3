@@ -1,0 +1,64 @@
+@charset "utf8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+*{
+
+}
+    
+body {
+    background-color: black;
+    padding: 10px;
+    background-image: url('imagens/background001.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right top;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+.branca {
+    background-color: whitesmoke;
+    width: 100%;
+    color: black;
+    text-align: left;
+    padding: 50px 0px 50px 25px;
+}
+
+.preta {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 250px;
+    margin: 15px;
+    color: whitesmoke;
+    text-align: left;
+    padding-top: 10px 0px 0px 10px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+footer a {
+    text-decoration: underline;
+}
