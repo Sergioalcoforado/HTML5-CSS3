@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <link rel="stylesheet" href="css/styles_login.css">
+    <link rel="icon" type="imagem/png" href="images/SFPC_04.png" />
+    
+    <title>SisCoPAS - SFPC 4ª RM</title>
+</head>
+
+<body>
+    <header>
+        <div class="adm">
+            <img src="images/DFPC.png" width="70px" alt="Logo DFPC">
+            <img src="images/SFPC_04.png" width="100px" alt="Logo SFPC 4ª RM">
+            <div class="texto-principal">
+                <h1>Comando da 4ª Região Militar</h1>
+                <h2>Serviço de Fiscalização de Produtos Controlados</h2>
+                <h2>Sistema de Controle de Processos Administrativos</h2>
+            </div>
+        </div>
+    </header>
+
+    <div id="video-container">
+        Aqui você insere o caminho do seu vídeo
+        <video id="bg-video" autoplay muted onended="showLoginForm()">
+            <source src="images/SisCoPAS.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo HTML5.
+        </video>
+        <script>
+            document.getElementById("bg-video").volume = 1.0; // Definir o volume para 100%
+        </script>
+    </div>
+    
+    <section>
+        <h1 style="color: rgb(255, 255, 255);">LOGIN</h1>
+        <div>
+            <div id="login-form">
+                <form method="POST" action="php/login.php">
+                    <fieldset class="grupo">
+                        <!-- Campo do e-mail com legenda "Digite seu e-mail" e css de classe "campo" -->
+                        <div class="campologin">
+                            <label for="user_email"><strong>Digite seu e-mail</strong></label>
+                            <input type="text" name="user_email" id="email" required title="Digite o seu e-mail cadastrado">
+                        </div>
+                        <!-- Campo da senha com legenda "Digite sua senha" e css de classe "campo" -->
+                        <div class="campologin">
+                            <label for="user_password"><strong>Digite sua senha</strong></label>
+                            <input type="password" name="user_password" id="senha"  placeholder="senha" title="Digite a sua senha">
+                        </div>
+                        <!-- Botão para enviar o formulário -->
+                        <button class="botao" type="submit" onsubmit="">ENTRAR</button>
+                        <br>
+                        <div class="campologin">
+                            <a style="color: rgb(255, 255, 255);font-weight: bold;" href="forget_pass.php">Esqueceu a senha?</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    
+        <br><br>
+        <div>
+            <a class="footer" href="https://www.eb.mil.br/"><img src="images/EB.png" width="40px" alt="Exército Brasileiro"></a>
+            <a class="footer" href="http://www.dfpc.eb.mil.br/"><img src="images/DFPC.png" width="40px" alt="DFPC"></a>
+            <a class="footer" href="https://www.cml.eb.mil.br/"><img src="images/cml.gif" width="40px" alt="CML"></a>
+            <a class="footer" href="https://www.4rm.eb.mil.br/"><img src="images/4rm.png" width="40px" alt="Cmdo 4ª RM"></a>
+        </div>
+    </section>
+
+    <br><br><br><br><br><br><br><br>
+    
+    <footer>    
+        <p>© Copyright - Sérgio Alcoforado 2024 </p>
+    </footer>
+
+    <br><br><br><br>
+
+    <script>
+        function showLoginForm() {
+          document.getElementById('login-form').style.display = 'none'; // Mostra o formulário
+          document.getElementById('bg-video').style.display = 'block'; // Oculta o vídeo
+          setTimeout(hideLoginForm, 100); // Oculta o formulário após 0,1 segundos (ajuste conforme necessário)
+        }
+      
+        function hideLoginForm() {
+          document.getElementById('login-form').style.display = 'block'; // Oculta o formulário
+          document.getElementById('bg-video').style.display = 'none'; // Mostra o vídeo novamente
+        }
+    </script>
+
+</body>
+</html>
